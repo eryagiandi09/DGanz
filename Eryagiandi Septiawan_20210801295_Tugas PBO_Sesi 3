@@ -1,0 +1,70 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    string NamaMhs, NIM, JenisKelamin, TanggalInput, MataKuliah, Absensi, Tugas, Lulus, TidakLulus;
+    float absensi, tugas, uts, uas, nilai_akhir;
+	char nilai_huruf;
+
+    cout << "Masukkan Data Diri Anda		: " << endl << endl;
+    cout << "Nama        			: "; getline(cin, NamaMhs);
+    cout << "NIM         			: "; getline(cin, NIM);
+    cout << "Jenis Kelamin			: "; getline(cin, JenisKelamin);
+    cout << "Tanggal Input Nilai		: "; getline(cin, TanggalInput);
+    cout << "Nama Mata Kuliah 		: "; getline(cin, MataKuliah);
+
+	cout<<"Masukan Nilai Absensi 		: ";
+	cin>>absensi;
+	
+	cout<<"Masukan Nilai Tugas		: ";
+	cin>>tugas;
+	
+	cout<<"Masukan Nilai UTS		: ";
+	cin>>uts;
+	
+	cout<<"Masukan Nilai UAS		: ";
+	cin>>uas;
+
+    cout << endl << endl;
+
+    cout << "___________________________________________"<< endl << endl;
+    cout << "            BIODATA MAHASISWA              "<< endl;
+    cout << "___________________________________________"<< endl << endl;
+    cout << "Nama        		  	: " << NamaMhs	         << endl;
+    cout << "NIM         		  	: " << NIM                 << endl;
+    cout << "Jenis Kelamin       		: " << JenisKelamin        << endl;
+    cout << "Tanggal Input Nilai 		: " << TanggalInput        << endl;
+    cout << "Nama Mata Kuliah    		: " << MataKuliah          << endl << endl;
+    cout << "___________NILAI AKHIR MAHASISWA___________"<< endl;
+	
+	nilai_akhir = ((absensi*0.1)+(tugas*0.2)+(uts*0.3)+(uas*0.4));
+	
+	if (nilai_akhir>=80){
+		nilai_huruf='A';
+	}else if (nilai_akhir>=70){
+		nilai_huruf='B';
+	}else if(nilai_akhir>=60){
+		nilai_huruf='C';
+	}else if (nilai_akhir>=50){
+		nilai_huruf='D';
+	}else {
+		nilai_huruf='E';
+	}	
+	
+	
+	cout<<endl;
+	cout<<"Nilai Akhir 			: "<<nilai_akhir<<endl;
+	cout<<"Nilai Huruf			: "<<nilai_huruf<<endl;
+
+	if (nilai_akhir>=70){
+		cout << "Keterangan Nilai 		: Lulus" <<endl;
+	}
+	else if (nilai_akhir<=70){
+		cout << "Keterangan Nilai 		: Tidak Lulus" <<endl;
+	}
+
+    cout << endl;
+
+    return 0;
+}
