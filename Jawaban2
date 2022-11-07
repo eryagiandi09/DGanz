@@ -11,19 +11,18 @@ Eryagiandi = Mahasiswa()
 Eryagiandi.nama = "Eryagiandi"
 Eryagiandi.nim = "20210801295"
 
-Eryagiandi.hello()
-
 class Abc:
 
     def __init__(self, nama, nim):
         self.nama = nama
         self.nim = nim
 
-    def __del__(self):
-        print("delete")  
-
     def data(self):
-        print("hello", self.nama, self.nim)
+        print("==============")
+        print("PROGRAM QUIZ")
+        print("==============")
+        print("Masukkan Nama : ", self.nama)
+        print("Masukkan NIM  : ", self.nim)
 
 a = Abc("Eryagiandi", "20210801295")
 #print(a.__dict__)
