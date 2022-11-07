@@ -1,2 +1,6 @@
 # Paradigma PBO
-print ("pemrograman yang berorientasikan kepada objek, dimana semua data dan fungsi dibungkus dalam class-class atau object-object.")
+print ("Paradigma PBO adalah pemrograman yang berorientasikan kepada objek, dimana semua data dan fungsi dibungkus dalam class-class atau object-object.")
+
+# Pengertian PBO
+print("PBO adalah paradigma pemrograman yang berorientasikan kepada objek yang merupakan suatu metode dalam pembuatan program") 
+print("dengan tujuan untuk menyelesaikan kompleksnya berbagai masalah program yang terus meningkat")
