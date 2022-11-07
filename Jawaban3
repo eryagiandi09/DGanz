@@ -1,0 +1,3 @@
+# Perbedaan Break dan Continue
+print ("Break akan menghentikan perulangan atau iterasi dan keluar dari perulangan")
+print ("Continue akan secara otomatis menghentikan iterasi yang sedang berjalan dan lanjut ke iterasi berikutnya")
