@@ -1,0 +1,6 @@
+try:
+  print(x)
+except NameError:
+  print("Variable x tidak ditentukan")
+except:
+  print("Telah terjadi kesalahan")
